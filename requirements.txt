@@ -1,0 +1,7 @@
+emd>=0.8.1
+matplotlib>=3.8.3
+numpy>=2.3.2
+pandas>=2.3.2
+scikit_learn>=1.4.0
+shap>=0.46.0
+torch>=2.2.0
