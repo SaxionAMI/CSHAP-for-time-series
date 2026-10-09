@@ -65,11 +65,14 @@ Switch the dataset parameter and decomposition definition to obtain the results 
 
 The anecdotal evidence in terms of the calculated C-SHAP can be visualized using `./notebooks/anecdotal_evidence.ipynb`. The extended analysis for the OPPORTUNITY dataset can be reproduced using `./notebooks/opportunity_extended_analysis.ipynb`.
 
-The comparison between concept-agnostic and concept-specific models can be reproduced using `./notebooks/model_comparison.ipynb`.
-
 The results for the feasibility analysis can be reproduced using `./scripts/evaluation/single_deletion.py` and `./scripts/evaluation/single_insertion.py`. The visualization of the results can be made using `./notebooks/feasbility_analysis.ipynb`.
 
 The stability analysis can be reproduced using `./notebooks/stability_analysis.ipynb`.
+
+The comparison between concept-agnostic and concept-specific models from our supplementary materials can be reproduced using `./notebooks/model_comparison.ipynb`.
+
+The hyperparameter sensitivity analysis from our supplementary materials can be reproduced using `./scripts/evaluation/sensitivity_analysis.py` and visualized using `./notebooks/sensitivity_analysis.ipynb`.
+
 
 ## Data used
 The scripts `./scripts/run_cshap_agnostic.py` and `./scripts/run_cshap_informed.py` require the prepared data given in ./data/prepared. The data was prepared from the datasets listed below (for the details regarding data preparation we refer to our article):

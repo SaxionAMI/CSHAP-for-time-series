@@ -6,4 +6,6 @@ notebooks
 └───  model_comparison.ipynb: to visualize the similarity of C-SHAP values calculated for the concept-agnostic and concept-informed models
 └───  feasibility_analysis.ipynb: to visualize the results of the feasibility analysis (the single deletion and single insertion experiments)
 └───  stability_analysis.ipynb: to reproduce the results of the stability analysis
+└───  sensitivity_analysis.ipynb: to visualize the results of the C-SHAP sensitivity to changes in the custom decomposition hyperparameters
+└───  kernelshap.ipynb: example visualization using KernelSHAP
 ```

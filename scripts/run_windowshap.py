@@ -31,7 +31,7 @@ data_path = './data/prepared/' + dataset
 model_path = './models/' + dataset + '/uni_channel'
 
 # Path to store calculated SHAP values to
-output_path = './data/windowshap_stationary/' + dataset + '/uni_channel/'
+output_path = './data/windowshap_sliding/' + dataset + '/uni_channel/'
 
 # Select how many models you want to calculate SHAP values for.
 n_runs = 1
@@ -87,10 +87,10 @@ for i in range(n_runs):
     wrapper = WindowshapWrapper(model, device)
 
     # Calculate C-SHAP values
-    # explainer = SlidingWindowSHAP(wrapper, stride=8, window_len=15, 
-    #                              B_ts=background_samples, test_ts=X_test)
-    explainer = StationaryWindowSHAP(wrapper, window_len=15, 
-                                B_ts=background_samples, test_ts=X_test)
+    explainer = SlidingWindowSHAP(wrapper, stride=8, window_len=15, 
+                                 B_ts=background_samples, test_ts=X_test)
+    # explainer = StationaryWindowSHAP(wrapper, window_len=15, 
+    #                             B_ts=background_samples, test_ts=X_test)
     shap_values = explainer.shap_values(num_output=n_classes)
 
     # Store results
