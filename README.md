@@ -22,6 +22,8 @@ C-SHAP can generate both local and global explanations. See the examples below.
 <p><b>Figure 2:</b> Global explanation for the OPPORTUNITY dataset. The custom decomposition: `trend+bias+scale*(low_freq+var*high_freq)` was used. The explanation shows a high contribution of the concept Bias (in this case the Bias represents the angle of the accelerometer).</p>
 
 ## Running C-SHAP
+The experiments have been tested in Python 3.8.11, the required Python libraries can be found in `requirements.txt`.
+
 We defined two classes for the two C-SHAP approaches.
 * `scripts.cshap.cshap.CSHAP()`: defines the concept-agnostic C-SHAP approach.
 * `scripts.cshap.cshap.CSHAPInformed()`: defines the concept-informed C-SHAP approach.
